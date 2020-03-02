@@ -42,9 +42,4 @@ ul.posts li {
     list-style: none;
 }
 
-.container
-{
-    overflow-y: scroll;
-    height: 250px;
-    width: 250px
-}
+
