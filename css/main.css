@@ -1,7 +1,6 @@
 body {
     margin: 60px auto;
     width: 70%;
-    overflow-y : auto;
 }
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
@@ -41,4 +40,11 @@ ul.posts {
 
 ul.posts li {
     list-style: none;
+}
+
+.container
+{
+    overflow-y: scroll;
+    height: 250px;
+    width: 250px
 }
