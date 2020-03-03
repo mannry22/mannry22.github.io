@@ -1,3 +1,4 @@
 Picture carousel inspired by https://www.w3schools.com/howto/howto_website.asp
 Scroll bar inspired by https://www.w3schools.com/cssref/tryit.asp?filename=trycss_overflow
 Linked sites and videos belong to respective owners
+Guide followed from http://jmcglone.com/guides/github-pages/ for github pages
