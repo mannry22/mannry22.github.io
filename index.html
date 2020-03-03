@@ -14,31 +14,6 @@
         		<li><a href="/blog">Blog</a></li>
     		</ul>
 		</nav>
-			<section>
-				<img class="caropics" src="/pictures/beretlizard.jpg" style="width:100%>
-				<img class="caropics" src="/pictures/cowboylizard.jpg" style="width:100%>
-				<img class="caropics" src="/pictures/mlizard.jpg" style="width:100%>
-				<img class="caropics" src="/pictures/sharklizard.jpg" style="width:100%>
-				<img class="caropics" src="/pictures/skatelizard.jpg" style="width:100%>
-				<img class="caropics" src="/pictures/wizardlizard.jpg" style="width:100%>							     
-			</section>
-			<script>
-			// Automatic Slideshow - change image every 3 seconds
-			var myIndex = 0;
-			carousel();
-
-			function carousel() {
-			  var i;
-			  var x = document.getElementsByClassName("caropics");
-			  for (i = 0; i < x.length; i++) {
-			    x[i].style.display = "none";
-			  }
-			  myIndex++;
-			  if (myIndex > x.length) {myIndex = 1}
-			  x[myIndex-1].style.display = "block";
-			  setTimeout(carousel, 3000);
-			}
-			</script>
 		<div class="container">
     		<div class="blurb">
         		<h1>The Lizard Dome</h1>
