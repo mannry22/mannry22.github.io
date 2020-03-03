@@ -7,11 +7,13 @@ nav ul, footer ul
     list-style: none;
     font-weight: bold;
 }
-nav ul li, footer ul li {
+nav ul li, footer ul li 
+{
     display: inline;
-    margin-right: 20px;
+    margin-right: 35px;
 }
 
+/*Add color and hover effect*/
 a 
 {
     text-decoration: none;
@@ -34,6 +36,7 @@ p
     color: #333;
 }
 
+/*Style footer color*/
 footer 
 {
     border-top: 1px solid #808000;
