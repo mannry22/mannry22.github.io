@@ -1,11 +1,15 @@
+<!--HTML file for main page-->
 <!DOCTYPE html>
 <html>
 	<head>
 		<title>Ryan Mann</title>
-		<!-- link to main stylesheet -->
+		
+		<!--Link stylesheet -->
 		<link rel="stylesheet" type="text/css" href="/css/main.css">
 	</head>
+	
 	<body>
+		<!--Navigation bar-->
 		<nav>
     		<ul>
         		<li><a href="/">Home</a></li>
@@ -14,6 +18,8 @@
         		<li><a href="/sightings">Sightings</a></li>
     		</ul>
 		</nav>
+		
+		<!--Picture carousel-->
 		<section>
 				<img class="caroimg" src="/pictures/wizardlizard.jpg">
 				<img class="caroimg" src="/pictures/mlizard.jpg">
@@ -22,37 +28,52 @@
 				<img class="caroimg" src="/pictures/cowboylizard.jpg">
 				<img class="caroimg" src="/pictures/beretlizard.jpg">
 		</section>
+		
 		<script>
-// Automatic Slideshow - change image every 3 seconds
-var myIndex = 0;
+//Declare variables and function
+var picIndex = 0;
 carousel();
 
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("caroimg");
-  for (i = 0; i < x.length; i++) 
-  {
-    x[i].style.display = "none";
-  }
-  myIndex++;
-  if (myIndex > x.length) 
-  {
-	  myIndex = 1;
-  }
-  x[myIndex-1].style.display = "block";
-  setTimeout(carousel, 5000);
+//Function to iterate through the pictures
+function carousel() 
+{
+	//Declare iterator and size of carousel
+  	var i;
+  	var x = document.getElementsByClassName("caroimg");
+	
+	//Iterate through and aid in display
+  	for (i = 0; i < x.length; i++) 
+	{
+    		x[i].style.display = "none";
+	}
+	
+	//Increment index
+  	picIndex++;
+	
+	//Reset index is above
+  	if (picIndex > x.length) 
+  	{
+	  	picIndex = 1;
+  	}
+	
+	//Display in format and set pause
+	x[picIndex-1].style.display = "block";
+  	setTimeout(carousel, 4000);
 }
 </script>
+		<!--Display title and blurb-->
 		<div class="container">
     		<div class="blurb">
-        		<h1>The Lizard Doom</h1>
+        		<h1>The Lizard Dome</h1>
 				<p>I like <em>LIZARDS</em> a lot. <a href="/sightings">Please tell me when you see one!</a></p>
     		</div>
 		</div>
+		
+		<!--Display footer-->
 		<footer>
-    		<ul>
-        		<li><a href="http://https://www.youtube.com/watch?v=kGOQfLFzJj8">lizard</a></li>
-        		<li><a href="https://github.com/mannry22">github.com/mannry22</a></li>
+    			<ul>
+        			<li><a href="http://https://www.youtube.com/watch?v=kGOQfLFzJj8">lizard</a></li>
+        			<li><a href="https://github.com/mannry22">github.com/mannry22</a></li>
 			</ul>
 		</footer>
 	</body>
