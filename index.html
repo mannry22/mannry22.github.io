@@ -14,6 +14,41 @@
         		<li><a href="/blog">Blog</a></li>
     		</ul>
 		</nav>
+		<ul>
+			<li><img class="img1" src="/pictures/wizardlizard.jpg"></li>
+			<li><img class="img1" src="/pictures/mlizard.jpg"></li>
+			<li><img class="img1" src="/pictures/skatelizard.jpg"></li>
+		</ul>
+		<style>
+			ul { display: flex; margin: 0; padding: 0; overflow: hidden; }
+			li { display: block; list-style: none; }
+		</style>
+		<button onclick="show(-1)">&lt;</button>
+		<button onclick="show(+1)">&gt;</button>
+		<style>
+		  button.prev, button.next {
+		    display: flex; font-size: 32px;
+		    align-items: center; justify-content: center;
+		    color: #FFF; background-color: #333;
+		    border-radius: 50%;
+		    width: 44px; height: 44px;
+		  }
+		  button.prev {
+		    position: absolute; left: 0; top: 80px;
+		  }
+		  button.next {
+		    position: absolute; right: 0; top: 80px;
+		  }
+		</style>
+		<script>
+			let liEls = document.querySelectorAll('ul li');
+			let index = 0;
+			window.show = function(increase) {
+			  index = index + increase;
+			  index = Math.min(Math.max(index,0), liEls.length-1);
+			  liEls[index].scrollIntoView({behavior: 'smooth'});
+			}
+		</script>
 		<div class="container">
     		<div class="blurb">
         		<h1>The Lizard Dome</h1>
